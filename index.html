@@ -20,9 +20,75 @@
             <li><a href="#">Contact</a></li>
          </ul>
       </nav>
+      <div class="header-text">
+         <p>Software Engineering</p>
+         <h1>Hi, I'm <span>Asmae</span> <br>Mouradi 
+            <br>from Morocco</h1>
+      </div>
    </div>
 </div>
+<!-- - ------about------- -->
 
+<div id="about">
+   <div class="container">
+      <div class="row">
+         <div class=" 1">
+            <img src="personel-portfolio/restaurant.JPG">
+         </div>
+         <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>As an experienced computer science student, I am passionate about leveraging 
+               technology to solve complex problems. 
+               With a track record of consistent hard work and determination, I am committed 
+               to honing my skills and expanding my expertise as a full stack developer. 
+               I believe that with continuous learning and growth, I can drive 
+               innovative solutions and make a positive impact in the tech industry.</p>
+               
+               <div class="tab-titles">
+                  <p class="tab-links active-link" onclick= "opentab('skills')">Skills</p>
+                  <p class="tab-links" onclick= "opentab('experience')">Experience </p>
+                  <p class="tab-links" onclick= "opentab('education')">Education </p>
+               </div>
+               <div class="tab-contents active-tab" id="skills">
+                  <ul>
+                     <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
+                     <li><span>Web development</span><br>Web App Development</li>
+                     <li><span>App development</span><br>building Android/IOS apps</li>
+                  </ul>
+               </div>
+               <div class="tab-contents" id="experience">
+                  <ul>
+                     <li><span>May 2023-current</span><br>Designing Web/App interfaces</li>
+                     <li><span>May 2023-current</span><br>Web App Development</li>
+                     <li><span>May 2023-current</span><br>building Android/IOS apps</li>
+                  </ul>
+               </div>
+               <div class="tab-contents" id="education">
+                  <ul>
+                     <li><span>2020</span><br>Bachelor at Akhawayn University in Morocco </li>
+                     <li><span>2023</span><br>Exchange semester at Agnes Scott College in USA</li>
+                     <li><span>2024</span><br>Internship</li>
+                     <li><span>2025</span><br>Graduation</li>
+                  </ul>
+               </div>
+         </div>
+      </div>
+   </div>
+</div>
+<script>
+   var tablinks=document.getElementsByClassName("tab-links");
+   var tabcontents=document.getElementsByClassName("tab-contents");
+   function opentab(tabname){
+      for(tablink of tablinks){
+         tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+         tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+   }
+</script>
 
     
  </body>
