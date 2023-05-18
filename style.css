@@ -30,7 +30,7 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.logo{
+.mylogo{
     width: 140px;
 }
 nav ul li{
@@ -162,7 +162,7 @@ nav ul li a:hover::after{
     margin-top:20px;
     display:inline-block;
 }
-.services-list div :hover{
+.services-list :hover{
     background: #ff004f;
     transform: translateY(-10px);
 }
