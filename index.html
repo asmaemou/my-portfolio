@@ -13,13 +13,15 @@
    <div class="container"> 
       <nav>
          <img src="logo.png" alt="logo">
-         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+         <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
          </ul>
+         <i class="fa-solid fa-bars" onclick="openmenu()"></i>
       </nav>
       <div class="header-text">
          <p>Software Engineering</p>
@@ -149,18 +151,20 @@
                <a href=""><i class="fab fa-instagram"></i></a>
                <a href=""><i class="fab fa-github"></i></a>
             </div>
-            <a href="" class="btn btn2">Download CV</a>
+            <a href="personel-portfolio/my-cv.pdf" download class="btn btn2">Download CV</a>
          </div>
          <div class="contact-right">
             <form>
                <input type="text" name="Name" placeholder="Your name" required>
                <input type="email" name="email" placeholder="Your email" required>
                <textarea type="Message" rows="6" placeholder="Message"></textarea>
-               <button type="submit">Submit</button>
-
+               <button type="submit" class="btn btn2">Submit</button>
             </form>
          </div>
       </div>
+   </div>
+   <div class="copyright">
+      <p></p>
    </div>
 </div>
 <script>
@@ -178,6 +182,15 @@
    }
 </script>
 
+<script>
+   var sidemeu=document.getElementById("sidemenu");
+   function openmuenu(){
+      sidemeu.style.right="0";
+   }
+   function closemenu(){
+      sidemeu.style.right="-200px";
+   }
+</script>
     
  </body>
  </html>
