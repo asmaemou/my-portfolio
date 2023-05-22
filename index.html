@@ -196,12 +196,13 @@
    const scriptURL = 'https://script.google.com/macros/s/AKfycbwp4gNjUp63TKSpRkKOqZV-1R4shm31Wa-puIBSMkQ5DD21Ta352WBRNXVYFVMnoVtQmw/exec'
    const form = document.forms['submit-to-google-sheet']
    const msg=document.getElementById("msg")
- 
    form.addEventListener('submit', e => {
      e.preventDefault()
-     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+     const emailBody = new FormData(form)
+     console.log(emailBody)
+     fetch(scriptURL, { method: 'POST', body: emailBody})
        .then(response => {
-         msg.inneerHTML="Message sent successfully"
+         msg.innerHTML="Message sent successfully"
          setTimeout(function(){
             msg.innerHTML=""
          },5000)
