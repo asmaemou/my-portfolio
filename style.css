@@ -69,9 +69,12 @@ nav ul li a:hover::after{
     color:#ff004f;
 }
 /*-----------about-------*/
-#about{
-    padding:80px 0;
-    color:#ababab;
+
+#about {
+    padding: 80px 0;
+    color: #ababab;
+    border-radius: 8px;
+    width: 1000px;
 }
 .row{
     display:flex;
@@ -360,3 +363,15 @@ nav.fas{
     margin-top: -40px;
     display:block;
 }
+.Mylogo {
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    height: 150px; /* Set the height instead of width */
+  }
+  
+.Mylogo:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }
+  
