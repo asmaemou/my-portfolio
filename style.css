@@ -182,12 +182,28 @@ nav ul li a:hover::after{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    height: 300px;
 }
 .work img{
      width:100%;
      border-radius: 10px;
      display: block;
      transition:transform 0.5s;
+}
+.work-description{
+    margin-bottom: 16px;
+}
+.work-tools{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.work-tools li{
+    font-weight: bold;
 }
 .layer{
     width: 100%;
@@ -374,4 +390,16 @@ nav.fas{
 .Mylogo:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
   }
+.titleS{
+    font-size: 15px;
+}
+.work-title{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+.about-image{
+    width: 285px;
+}
+
   

@@ -36,7 +36,7 @@
    <div class="container">
       <div class="row">
          <div class=" 1">
-            <img src="about.png">
+            <img class="about-image" src="about.png">
          </div>
          <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
@@ -54,9 +54,10 @@
                </div>
                <div class="tab-contents active-tab" id="skills">
                   <ul>
-                     <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                     <li><span>Web development</span><br>Web App Development</li>
-                     <li><span>App development</span><br>building Android/IOS apps</li>
+                     <li><span>Back-End</span><br>PostgresSQL,Django</li>
+                     <li><span>Front-End</span><br>JavaScript,HTML,CSS</li>
+                     <li><span>Tools and Methods</span><br>GitHub,Figma</li>
+                     <li><span>Soft Skills</span><br>Communication,Teamwork,Conflict Resolution,Adaptability,Perseverance,Determination</li>
                   </ul>
                </div>
                <div class="tab-contents" id="experience">
@@ -68,38 +69,12 @@
                </div>
                <div class="tab-contents" id="education">
                   <ul>
-                     <li><span>2020</span><br>Bachelor at Akhawayn University in Morocco </li>
                      <li><span>2023</span><br>Exchange semester at Agnes Scott College in USA</li>
                      <li><span>2024</span><br>Internship</li>
                      <li><span>2025</span><br>Graduation</li>
+                     <li><span>2020</span><br>Bachelor at Akhawayn University in Morocco </li>
                   </ul>
                </div>
-         </div>
-      </div>
-   </div>
-</div>
-<!------------services--------->
-<div id="services">
-   <div class="container">
-      <h1 class="sub-title">My services</h1>
-      <div class="services-list">
-         <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>Web Design</h2>
-            <p>write something</p>
-            <a href="#">Learn more</a>
-         </div>
-         <div>
-            <i class="fa-solid fa-crop-simple"></i>
-            <h2>UI/UX design</h2>
-            <p>write something</p>
-            <a href="#">Learn more</a>
-         </div>
-         <div>
-            <i class="fa-brands fa-app-store"></i>
-            <h2>APP Design</h2>
-            <p>write something</p>
-            <a href="#">Learn more</a>
          </div>
       </div>
    </div>
@@ -107,13 +82,18 @@
 <!------------portfolio-------->
 <div id="portfolio">
    <div class="container">
-      <h1 class="sub-title">My Work</h1>
+      <h1 class="sub-title">My Projects</h1>
       <div class="work-list">
          <div class="work">
-            <img src="personel-portfolio/work-1.png">
+            <img src="Best-Taxi-Apps.jpg">
             <div class="layer">
-               <h3>Social Media App</h3>
-               <p>The app connects you to the talented people around the world.</p>
+               <h4 class="work-title">Taxiji</h4>
+               <p class="work-description">This application aimed to help college student to save time by reserving a taxi at a specific time and a specific number of people.</p>
+               <h5 class="titleS">Built with</h5>
+               <ul class="work-tools">
+                  <li>React</li>
+                  <li>JavaScript</li>
+               </ul>               
                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
             </div>
          </div>
@@ -137,6 +117,32 @@
       <a href="#" class="btn">See more</a>
    </div>
 </div>
+<!------------services--------->
+<div id="services">
+   <div class="container">
+      <h1 class="sub-title">My services</h1>
+      <div class="services-list">
+         <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>I leant how to create a user-friendly websites. I make sure to satisfy those important point such as: Custom Website Design,Responsive Design,User experience optimization,Visual branding integration,Collaborative Approach</p>
+            <a href="#"></a>
+         </div>
+         <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX design</h2>
+            <p>Elevate your digital experience with our UI/UX Design Services. We combine user-centric design principles and captivating visuals to create intuitive interfaces that engage and delight the audience.</p>
+            <a href="#"></a>
+         </div>
+         <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>APP Design</h2>
+            <p>Transform your vision into a stunning mobile experience with our App Design services. We blend seamless usability and captivating aesthetics to create intuitive interfaces that bring your app to life.</p>
+            <a href="#"></a>
+         </div>
+      </div>
+   </div>
+</div>
 <!--------------contact---------->
 <div id="contact">
    <div class="container">
@@ -146,10 +152,10 @@
             <p><i class="fa-solid fa-paper-plane"></i> amouradi2002@gmail.com</p>
             <p><i class="fa-solid fa-phone"></i>+341 5296392</p>
             <div class="social-icons">
-               <a href=""><i<i class="fa-brands fa-linkedin"></i></a>
-               <a href=""><i class="fab fa-facebook"></i></a>
-               <a href=""><i class="fab fa-instagram"></i></a>
-               <a href=""><i class="fab fa-github"></i></a>
+               <a target="_blank" href="https://www.linkedin.com/in/asmaemouradi/"><i<i class="fa-brands fa-linkedin"></i></a>
+               <a target="_blank" href="https://www.facebook.com/aya.andaloussi.9/"><i class="fab fa-facebook"></i></a>
+               <a target="_blank" href="https://www.instagram.com/asmae__mouradi/"><i class="fab fa-instagram"></i></a>
+               <a target="_blank" href="https://github.com/asmaemou"><i class="fab fa-github"></i></a>
             </div>
             <a href="./my-cv.pdf" target="_blank" download class="btn btn2">Download CV</a>
          </div>
@@ -160,7 +166,7 @@
                <textarea type="Message" name="message" rows="6" placeholder="Message"></textarea>
                <button type="submit" class="btn btn2">Submit</button>
             </form>
-            <span id="msg">hello</span>
+            <span id="msg"></span>
          </div>
       </div>
    </div>
